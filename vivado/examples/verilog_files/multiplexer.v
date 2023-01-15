@@ -1,10 +1,17 @@
-module multiplexer_4to1(input [1:0] sel, input [3:0] a, output reg out);
-   always @* begin
-      case(sel)
-         2'b00: out = a[0];
-         2'b01: out = a[1];
-         2'b10: out = a[2];
-         2'b11: out = a[3];
-      endcase
-   end
+module mux2to1 (input a, b, sel, output y);
+  assign y = sel ? b : a;
+endmodule
+
+module mux2to1_tb;
+  reg a, b, sel;
+  wire y;
+
+  mux2to1 dut (a, b, sel, y);
+
+  initial begin
+    a = 0; b = 0; sel = 0; #10;
+    a = 1; b = 0; sel = 1; #10;
+    a = 0; b = 1; sel = 1; #10;
+    a = 1; b = 1; sel = 0; #10;
+  end
 endmodule
