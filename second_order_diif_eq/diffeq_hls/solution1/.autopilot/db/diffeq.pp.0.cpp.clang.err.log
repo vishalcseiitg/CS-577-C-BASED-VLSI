@@ -1,0 +1,10 @@
+/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1/csynth.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=diffeq_XLX_SEP_ PragmaOptions=name=diffeq_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=diffeq
+        ^
+/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1/directives.tcl:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=diffeq_XLX_SEP_ PragmaOptions=name=diffeq_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=diffeq
+        ^
+diffeq.cpp:3:104: warning: unused parameter 'clock' [-Wunused-parameter]
+__attribute__((sdx_kernel("diffeq", 0))) double diffeq(double x, double dx, double u, double a, double clock, double y) {
+                                                                                                       ^
+3 warnings generated.

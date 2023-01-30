@@ -1,0 +1,7 @@
+digraph "CFG for 'half_adder' function" {
+	label="CFG for 'half_adder' function";
+
+	Node0x3f97dc0 [shape=record,filename="",linenumber="",label="{entry.predFake}"];
+	Node0x3f97dc0 -> Node0x3f86430[ callList="" memoryops="" filename="../../../../half_adder.c" execusionnum="0"];
+	Node0x3f86430 [shape=record,filename="../../../../half_adder.c",linenumber="4",label="{entry.succFake}"];
+}

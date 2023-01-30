@@ -1,0 +1,11 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot diffeq_behav xil_defaultlib.diffeq xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1_ip> not found while processing module instance <diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1_ip_u> [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1.v:43]
+ERROR: [VRFC 10-2063] Module <diffeq_dsub_64ns_64ns_64_7_full_dsp_1_ip> not found while processing module instance <diffeq_dsub_64ns_64ns_64_7_full_dsp_1_ip_u> [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq_dsub_64ns_64ns_64_7_full_dsp_1.v:39]
+ERROR: [VRFC 10-2063] Module <diffeq_dmul_64ns_64ns_64_7_max_dsp_1_ip> not found while processing module instance <diffeq_dmul_64ns_64ns_64_7_max_dsp_1_ip_u> [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq_dmul_64ns_64ns_64_7_max_dsp_1.v:39]
+ERROR: [VRFC 10-2063] Module <diffeq_dcmp_64ns_64ns_1_2_no_dsp_1_ip> not found while processing module instance <diffeq_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u> [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq_dcmp_64ns_64ns_1_2_no_dsp_1.v:60]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

@@ -1,0 +1,353 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jan 24 16:01:11 2023
+# Process ID: 1146169
+# Current directory: /home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: /home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: /home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/vivado.jou
+# Running On: vishal1005, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 8, Host memory: 16543 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 45667
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.969 ; gain = 0.023 ; free physical = 157 ; free virtual = 9395
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1146501
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1999.016 ; gain = 362.734 ; free physical = 379 ; free virtual = 8346
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1126.881; parent = 1122.150; children = 6.286
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2730.645; parent = 2004.957; children = 725.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul' [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul.v:10]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_mul_8s_8s_16_1_1' [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mul_8s_8s_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_mul_8s_8s_16_1_1' (0#1) [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mul_8s_8s_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_mac_muladd_8s_8s_16s_16_4_1' [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0' [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0' (0#1) [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_mac_muladd_8s_8s_16s_16_4_1' (0#1) [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_mac_muladd_8s_8s_16ns_16_4_1' [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1' [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1' (0#1) [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_mac_muladd_8s_8s_16ns_16_4_1' (0#1) [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v:47]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_flow_control_loop_pipe' [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_flow_control_loop_pipe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_flow_control_loop_pipe' (0#1) [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_flow_control_loop_pipe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul' (0#1) [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-7129] Port ap_done_int in module matrixmul_flow_control_loop_pipe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 2071.922 ; gain = 435.641 ; free physical = 432 ; free virtual = 8428
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1126.881; parent = 1122.150; children = 8.360
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2797.648; parent = 2071.926; children = 725.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 2089.734 ; gain = 453.453 ; free physical = 428 ; free virtual = 8433
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1126.881; parent = 1122.150; children = 8.360
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2815.461; parent = 2089.738; children = 725.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 2089.734 ; gain = 453.453 ; free physical = 426 ; free virtual = 8432
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1126.881; parent = 1122.150; children = 8.360
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2815.461; parent = 2089.738; children = 725.723
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2089.734 ; gain = 0.000 ; free physical = 417 ; free virtual = 8427
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/matrixmul_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/matrixmul_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2246.484 ; gain = 0.000 ; free physical = 317 ; free virtual = 8274
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2246.484 ; gain = 0.000 ; free physical = 309 ; free virtual = 8272
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 472 ; free virtual = 8320
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1221.027; parent = 1143.055; children = 83.867
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2940.465; parent = 2214.473; children = 725.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 468 ; free virtual = 8317
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1221.027; parent = 1143.055; children = 84.153
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2940.465; parent = 2214.473; children = 725.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 469 ; free virtual = 8318
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1221.027; parent = 1143.055; children = 85.403
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2940.465; parent = 2214.473; children = 725.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 457 ; free virtual = 8309
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1221.027; parent = 1143.055; children = 86.536
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2940.465; parent = 2214.473; children = 725.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 4     
+	   3 Input    4 Bit       Adders := 1     
+	   4 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               18 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 5     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '16' bits. [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '16' bits. [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '16' bits. [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '16' bits. [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v:32]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '16' bits. [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/8735/hdl/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v:31]
+DSP Report: Generating DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A''*B2)'.
+DSP Report: register mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A2*B2)'.
+DSP Report: register a_load_reg_471_reg is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register b_load_reg_491_reg is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_8s_8s_16_1_1_U1/dout is absorbed into DSP mac_muladd_8s_8s_16s_16_4_1_U2/matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (PCIN+(A''*B'')')'.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/m is absorbed into DSP mac_muladd_8s_8s_16ns_16_4_1_U3/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1_U/p_reg_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 415 ; free virtual = 8293
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1221.027; parent = 1143.055; children = 105.693
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2941.223; parent = 2214.473; children = 726.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                   | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0 | (A''*B2)'          | 9      | 9      | -      | -      | 18     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|matrixmul                                     | (PCIN+A2*B2)'      | 8      | 8      | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|matrixmul                                     | (PCIN+(A''*B'')')' | 9      | 9      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++----------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:38 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 227 ; free virtual = 8145
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1364.453; parent = 1235.356; children = 129.097
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 210 ; free virtual = 8137
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1365.097; parent = 1235.838; children = 129.259
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 181 ; free virtual = 8116
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1370.034; parent = 1240.756; children = 129.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 140 ; free virtual = 8027
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1377.761; parent = 1241.031; children = 139.615
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 142 ; free virtual = 8027
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1377.776; parent = 1241.031; children = 139.615
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 147 ; free virtual = 8023
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1378.093; parent = 1241.031; children = 139.881
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 147 ; free virtual = 8024
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1378.108; parent = 1241.031; children = 139.881
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 151 ; free virtual = 8027
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1378.229; parent = 1241.031; children = 140.002
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 151 ; free virtual = 8027
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1378.245; parent = 1241.031; children = 140.002
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                   | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|matrixmul                                     | (PCIN+(A''*B'')')' | 30     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0 | (A''*B')'          | 30     | 18     | -      | -      | 0      | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|matrixmul                                     | (PCIN+A'*B')'      | 30     | 18     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 0    | 1    | 
++----------------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     3|
+|4     |LUT1    |     1|
+|5     |LUT2    |     7|
+|6     |LUT3    |     6|
+|7     |LUT4    |     6|
+|8     |LUT5    |    22|
+|9     |LUT6    |    16|
+|10    |FDRE    |    30|
+|11    |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 151 ; free virtual = 8027
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1378.276; parent = 1241.031; children = 140.002
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2942.227; parent = 2214.473; children = 727.754
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 2246.484 ; gain = 453.453 ; free physical = 220 ; free virtual = 8079
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:42 . Memory (MB): peak = 2246.484 ; gain = 610.203 ; free physical = 346 ; free virtual = 8155
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2246.484 ; gain = 0.000 ; free physical = 336 ; free virtual = 8146
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2246.484 ; gain = 0.000 ; free physical = 257 ; free virtual = 8083
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: ac1903ec
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:53 . Memory (MB): peak = 2246.484 ; gain = 941.766 ; free physical = 468 ; free virtual = 8298
+INFO: [Common 17-1381] The checkpoint '/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = b387fe6606bccc64
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 24 16:03:13 2023...

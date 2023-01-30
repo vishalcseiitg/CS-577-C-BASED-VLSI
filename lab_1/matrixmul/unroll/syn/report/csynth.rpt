@@ -1,0 +1,130 @@
+
+
+================================================================
+== Synthesis Summary Report of 'matrixmul'
+================================================================
++ General Information: 
+    * Date:           Tue Jan 24 16:11:55 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        matrixmul
+    * Solution:       unroll (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+----------+-----------+-----+
+    |   Modules   | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |          |           |     |
+    |   & Loops   | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |    FF    |    LUT    | URAM|
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+----------+-----------+-----+
+    |+ matrixmul  |     -|  0.65|       32|  320.000|         -|       33|     -|        no|     -|  2 (~0%)|  63 (~0%)|  340 (~0%)|    -|
+    | o Row_Col   |     -|  7.30|       30|  300.000|         7|        3|     9|       yes|     -|        -|         -|          -|    -|
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++--------------+----------+
+| Interface    | Bitwidth |
++--------------+----------+
+| a_address0   | 4        |
+| a_address1   | 4        |
+| a_q0         | 8        |
+| a_q1         | 8        |
+| b_address0   | 4        |
+| b_address1   | 4        |
+| b_q0         | 8        |
+| b_q1         | 8        |
+| res_address0 | 4        |
+| res_d0       | 16       |
++--------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| a        | in        | char*    |
+| b        | in        | char*    |
+| res      | out       | short*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+----------+
+| Argument | HW Interface | HW Type | HW Usage |
++----------+--------------+---------+----------+
+| a        | a_address0   | port    | offset   |
+| a        | a_ce0        | port    |          |
+| a        | a_q0         | port    |          |
+| a        | a_address1   | port    | offset   |
+| a        | a_ce1        | port    |          |
+| a        | a_q1         | port    |          |
+| b        | b_address0   | port    | offset   |
+| b        | b_ce0        | port    |          |
+| b        | b_q0         | port    |          |
+| b        | b_address1   | port    | offset   |
+| b        | b_ce1        | port    |          |
+| b        | b_q1         | port    |          |
+| res      | res_address0 | port    | offset   |
+| res      | res_ce0      | port    |          |
+| res      | res_we0      | port    |          |
+| res      | res_d0       | port    |          |
++----------+--------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                              | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++-----------------------------------+-----+--------+------------+-----+--------+---------+
+| + matrixmul                       | 2   |        |            |     |        |         |
+|   empty_fu_188_p2                 | -   |        | empty      | sub | fabric | 0       |
+|   add_ln11_3_fu_200_p2            | -   |        | add_ln11_3 | add | fabric | 0       |
+|   add_ln11_fu_209_p2              | -   |        | add_ln11   | add | fabric | 0       |
+|   empty_7_fu_241_p2               | -   |        | empty_7    | sub | fabric | 0       |
+|   add_ln11_1_fu_333_p2            | -   |        | add_ln11_1 | add | fabric | 0       |
+|   add_ln11_2_fu_343_p2            | -   |        | add_ln11_2 | add | fabric | 0       |
+|   add_ln21_2_fu_356_p2            | -   |        | add_ln21_2 | add | fabric | 0       |
+|   add_ln21_3_fu_295_p2            | -   |        | add_ln21_3 | add | fabric | 0       |
+|   mul_8s_8s_16_1_1_U1             | -   |        | mul_ln21   | mul | auto   | 0       |
+|   mac_muladd_8s_8s_16ns_16_4_1_U3 | 1   |        | mul_ln21_1 | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_16s_16_4_1_U2  | 1   |        | mul_ln21_2 | mul | dsp48  | 3       |
+|   mac_muladd_8s_8s_16s_16_4_1_U2  | 1   |        | add_ln21   | add | dsp48  | 3       |
+|   mac_muladd_8s_8s_16ns_16_4_1_U3 | 1   |        | add_ln21_1 | add | dsp48  | 3       |
+|   add_ln13_fu_312_p2              | -   |        | add_ln13   | add | fabric | 0       |
++-----------------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------+-------------------------------+
+| Type     | Options | Location                      |
++----------+---------+-------------------------------+
+| pipeline | II=3    | matrixmul.cpp:16 in matrixmul |
++----------+---------+-------------------------------+
+
+

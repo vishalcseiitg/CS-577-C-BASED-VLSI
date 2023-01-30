@@ -1,0 +1,7 @@
+INFO: [HLS 200-10] Running '/home/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'vishal' on host 'vishal1005' (Linux_x86_64 version 5.15.0-57-generic) on Thu Jan 19 17:36:19 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/vishal/half_adder/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_vishal/756261674129979122106
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.34 seconds. Total CPU system time: 0.1 seconds. Total elapsed time: 1.37 seconds; peak allocated memory: 98.957 MB.

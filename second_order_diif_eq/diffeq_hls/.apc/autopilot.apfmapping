@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="diffeq.cpp" path="/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="diffeq.h" path="/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq.h"/>
+    <originFiles name="diff_eq_tb_2.cpp" path="/home/vishal/Desktop/HLS/second_order_diif_eq/diff_eq_tb_2.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,5 @@
+digraph "Call graph demangled" {
+	label="Call graph demangled";
+
+	Node0x3f01c30 [shape=record,label="{half_adder}" fid="1" demanglename="half_adder" manglename="half_adder" filename="../../../../half_adder.c" linenumber="1"];
+}

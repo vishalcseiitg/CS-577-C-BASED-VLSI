@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../diffeq.cpp in debug mode
+   Generating csim.exe
+Test case 1 failed. Got: 0.915505 expected: 6.9717
+Test case 2 failed. Got: 0.184898 expected: 1.9076
+Test case 3 failed. Got: 1.66056 expected: 2.9258
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/vishal/array_hls_27_jan/solution1/./sim/autowrap/testbench/array_hls.cpp_pre.cpp.tb.cpp

@@ -1,0 +1,5 @@
+/home/vishal/array_hls_27_jan/solution1/.autopilot/db/array_hls.pp.0.cpp:28335:5: warning: Added loop label VITIS_LOOP_6_1:   [xilinx-label-all-loops]
+    for (int i = 3; i < 20; i++) {
+    ^~~
+    VITIS_LOOP_6_1: 
+/home/vishal/array_hls_27_jan/solution1/.autopilot/db/array_hls.pp.0.cpp:28335:5: note: FIX-IT applied suggested code changes

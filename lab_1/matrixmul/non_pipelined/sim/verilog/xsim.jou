@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jan 24 15:45:45 2023
+# Process ID: 1140904
+# Current directory: /home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/matrixmul/xsim_script.tcl}
+# Log file: /home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/sim/verilog/xsim.log
+# Journal file: /home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/sim/verilog/xsim.jou
+# Running On: vishal1005, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 8, Host memory: 16543 MB
+#-----------------------------------------------------------
+source xsim.dir/matrixmul/xsim_script.tcl
+open_wave_config matrixmul_dataflow_ana.wcfg
+source matrixmul.tcl

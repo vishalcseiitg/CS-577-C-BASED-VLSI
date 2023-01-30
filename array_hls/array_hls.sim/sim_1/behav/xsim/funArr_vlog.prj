@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../array_hls_27_jan/solution1/syn/verilog/funArr_flow_control_loop_pipe.v" \
+"../../../../../../../array_hls_27_jan/solution1/syn/verilog/funArr.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jan 20 10:43:49 2023
+# Process ID: 182334
+# Current directory: /home/vishal/half_adder/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/half_adder/xsim_script.tcl}
+# Log file: /home/vishal/half_adder/solution1/sim/verilog/xsim.log
+# Journal file: /home/vishal/half_adder/solution1/sim/verilog/xsim.jou
+# Running On: vishal1005, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 8, Host memory: 16543 MB
+#-----------------------------------------------------------
+source xsim.dir/half_adder/xsim_script.tcl
+# xsim {half_adder} -autoloadwcfg -tclbatch {half_adder.tcl}
+Time resolution is 1 ps
+source half_adder.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 5 [n/a] @ "125000"
+// RTL Simulation : 1 / 5 [n/a] @ "145000"
+// RTL Simulation : 2 / 5 [n/a] @ "155000"
+// RTL Simulation : 3 / 5 [n/a] @ "165000"
+// RTL Simulation : 4 / 5 [n/a] @ "175000"
+// RTL Simulation : 5 / 5 [n/a] @ "185000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 245 ns : File "/home/vishal/half_adder/solution1/sim/verilog/half_adder.autotb.v" Line 394
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Jan 20 10:43:54 2023...

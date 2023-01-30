@@ -1,0 +1,4 @@
+Running: xsim.dir/matrixmul_behav/xsimk -simmode gui -wdb matrixmul_behav.wdb -simrunnum 0 -socket 52751
+Design successfully loaded
+Design Loading Memory Usage: 29208 KB (Peak: 29728 KB)
+Design Loading CPU Usage: 40 ms

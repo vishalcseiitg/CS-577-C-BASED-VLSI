@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1/.autopilot/db/diffeq.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_6_1:  '
+    FileOffset:      6
+    FilePath:        diffeq.cpp
+    Replacements:    
+      - FilePath:        /home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1/.autopilot/db/diffeq.pp.0.cpp
+        Offset:          763666
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_6_1: '
+...

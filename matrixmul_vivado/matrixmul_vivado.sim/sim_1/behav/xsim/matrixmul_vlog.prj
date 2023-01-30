@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../lab_1/matrixmul/solution1/syn/verilog/matrixmul_flow_control_loop_pipe.v" \
+"../../../../../lab_1/matrixmul/solution1/syn/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v" \
+"../../../../../lab_1/matrixmul/solution1/syn/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v" \
+"../../../../../lab_1/matrixmul/solution1/syn/verilog/matrixmul_mul_8s_8s_16_1_1.v" \
+"../../../../../lab_1/matrixmul/solution1/syn/verilog/matrixmul.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

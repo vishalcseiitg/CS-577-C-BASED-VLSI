@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/pragma_array/solution1/syn/verilog/PipedFunc_PipedFunc_Pipeline_VITIS_LOOP_9_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipedFunc_PipedFunc_Pipeline_VITIS_LOOP_9_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/pragma_array/solution1/syn/verilog/PipedFunc_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipedFunc_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/pragma_array/solution1/syn/verilog/PipedFunc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipedFunc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/Desktop/HLS/pragma_array_hls/pragma_array_hls.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,64 @@
+Test case 1 passed
+Test case 2 passed
+Test case 3 passed
+Test case 4 passed
+Test case 5 failed
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_half_adder_top glbl -Oenable_linking_all_libraries -prj half_adder.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s half_adder 
+Multi-threading is on. Using 14 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vishal/half_adder/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vishal/half_adder/solution1/sim/verilog/half_adder.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_half_adder_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vishal/half_adder/solution1/sim/verilog/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vishal/half_adder/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_half_adder_top
+Compiling module work.glbl
+Built simulation snapshot half_adder
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/half_adder/xsim_script.tcl
+# xsim {half_adder} -autoloadwcfg -tclbatch {half_adder.tcl}
+Time resolution is 1 ps
+source half_adder.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 5 [n/a] @ "125000"
+// RTL Simulation : 1 / 5 [n/a] @ "145000"
+// RTL Simulation : 2 / 5 [n/a] @ "155000"
+// RTL Simulation : 3 / 5 [n/a] @ "165000"
+// RTL Simulation : 4 / 5 [n/a] @ "175000"
+// RTL Simulation : 5 / 5 [n/a] @ "185000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 245 ns : File "/home/vishal/half_adder/solution1/sim/verilog/half_adder.autotb.v" Line 394
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Jan 20 10:43:54 2023...
+Test case 1 passed
+Test case 2 passed
+Test case 3 passed
+Test case 4 passed
+Test case 5 failed

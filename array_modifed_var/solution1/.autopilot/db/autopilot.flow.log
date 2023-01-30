@@ -1,0 +1,26 @@
+INFO-FLOW: Workspace /home/vishal/Desktop/HLS/array_modifed_var/solution1 opened at Sun Jan 29 10:54:25 IST 2023
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part - 
+Execute       create_platform - -board  
+DBG:HLSDevice: Trying to load device library: /home/Vitis_HLS/2022.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+ERROR: [HLS 200-1023] Part '-' is not installed.
+Command       create_platform done; error code: 1; 3.22 sec.
+INFO-FLOW: Caught error in set_part: command 'create_platform' returned error code
+    while executing
+"create_platform $value -board $board"
+    (procedure "ap_internal_set_part" line 26)
+    invoked from within
+"ap_internal_set_part "
+Command     set_part done; error code: 2; 3.22 sec.
+INFO-FLOW: Caught error in open_solution: command 'create_platform' returned error code
+    while executing
+"::AP::initSetPart"
+    (procedure "ap_internal_open_solution" line 131)
+    invoked from within
+"ap_internal_open_solution "
+Command   open_solution done; error code: 2; 3.3 sec.
+Command ap_source done; error code: 1; 3.31 sec.
+Execute cleanup_all 

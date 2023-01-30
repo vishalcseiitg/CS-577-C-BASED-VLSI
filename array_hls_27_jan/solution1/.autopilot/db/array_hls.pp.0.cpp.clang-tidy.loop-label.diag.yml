@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/vishal/array_hls_27_jan/solution1/.autopilot/db/array_hls.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_6_1:  '
+    FileOffset:      6
+    FilePath:        /home/vishal/Desktop/HLS/Array_hls/array_hls.cpp
+    Replacements:    
+      - FilePath:        /home/vishal/array_hls_27_jan/solution1/.autopilot/db/array_hls.pp.0.cpp
+        Offset:          763562
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_6_1: '
+...

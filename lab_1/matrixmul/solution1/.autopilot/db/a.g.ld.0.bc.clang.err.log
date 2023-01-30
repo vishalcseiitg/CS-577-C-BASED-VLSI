@@ -1,0 +1,2 @@
+remark: matrixmul.cpp:20:16: Loop 'Product' is marked as complete unroll implied by the pipeline pragma
+remark: matrixmul.cpp:9:0: Unrolling loop 'Product' (matrixmul.cpp:20:16) in function 'matrixmul' completely with a factor of 3

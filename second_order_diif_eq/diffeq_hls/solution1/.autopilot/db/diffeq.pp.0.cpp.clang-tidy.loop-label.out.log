@@ -1,0 +1,5 @@
+/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1/.autopilot/db/diffeq.pp.0.cpp:28339:5: warning: Added loop label VITIS_LOOP_6_1:   [xilinx-label-all-loops]
+    while(x < a) {
+    ^~~~~
+    VITIS_LOOP_6_1: 
+/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1/.autopilot/db/diffeq.pp.0.cpp:28339:5: note: FIX-IT applied suggested code changes

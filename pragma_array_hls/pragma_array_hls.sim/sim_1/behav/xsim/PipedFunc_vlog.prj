@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../pragma_array/solution1/syn/verilog/PipedFunc_PipedFunc_Pipeline_VITIS_LOOP_9_1.v" \
+"../../../../../../../pragma_array/solution1/syn/verilog/PipedFunc_flow_control_loop_pipe_sequential_init.v" \
+"../../../../../../../pragma_array/solution1/syn/verilog/PipedFunc.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,119 @@
+
+
+================================================================
+== Synthesis Summary Report of 'diffeq'
+================================================================
++ General Information: 
+    * Date:           Mon Jan 23 16:09:21 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        diffeq_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------+--------+-------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |      Modules      |  Issue |       | Latency | Latency| Iteration|         | Trip |          |      |         |           |           |     |
+    |      & Loops      |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +-------------------+--------+-------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ diffeq           |  Timing|  -0.66|        -|       -|         -|        -|     -|        no|     -|  17 (7%)|  2403 (2%)|  3270 (6%)|    -|
+    | o VITIS_LOOP_6_1  |      II|   7.30|        -|       -|        37|       28|     -|       yes|     -|        -|          -|          -|    -|
+    +-------------------+--------+-------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| a         | ap_none | 64       |
+| ap_return |         | 64       |
+| clock     | ap_none | 64       |
+| dx        | ap_none | 64       |
+| u         | ap_none | 64       |
+| x         | ap_none | 64       |
+| y         | ap_none | 64       |
++-----------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| x        | in        | double   |
+| dx       | in        | double   |
+| u        | in        | double   |
+| a        | in        | double   |
+| clock    | in        | double   |
+| y        | in        | double   |
+| return   | out       | double   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| x        | x            | port    |
+| dx       | dx           | port    |
+| u        | u            | port    |
+| a        | a            | port    |
+| clock    | clock        | port    |
+| y        | y            | port    |
+| return   | ap_return    | port    |
++----------+--------------+---------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------+-----+--------+----------+------+---------+---------+
+| Name                                    | DSP | Pragma | Variable | Op   | Impl    | Latency |
++-----------------------------------------+-----+--------+----------+------+---------+---------+
+| + diffeq                                | 17  |        |          |      |         |         |
+|   dmul_64ns_64ns_64_7_max_dsp_1_U3      | 11  |        | mul      | dmul | maxdsp  | 6       |
+|   dmul_64ns_64ns_64_7_max_dsp_1_U3      | 11  |        | mul1     | dmul | maxdsp  | 6       |
+|   dmul_64ns_64ns_64_7_max_dsp_1_U3      | 11  |        | mul2     | dmul | maxdsp  | 6       |
+|   dadddsub_64ns_64ns_64_7_full_dsp_1_U1 | 3   |        | sub      | dadd | fulldsp | 6       |
+|   dmul_64ns_64ns_64_7_max_dsp_1_U3      | 11  |        | mul3     | dmul | maxdsp  | 6       |
+|   dmul_64ns_64ns_64_7_max_dsp_1_U3      | 11  |        | mul4     | dmul | maxdsp  | 6       |
+|   dsub_64ns_64ns_64_7_full_dsp_1_U2     | 3   |        | u1       | dsub | fulldsp | 6       |
+|   dmul_64ns_64ns_64_7_max_dsp_1_U3      | 11  |        | mul6     | dmul | maxdsp  | 6       |
+|   dadddsub_64ns_64ns_64_7_full_dsp_1_U1 | 3   |        | y1       | dadd | fulldsp | 6       |
+|   dadddsub_64ns_64ns_64_7_full_dsp_1_U1 | 3   |        | x1       | dadd | fulldsp | 6       |
++-----------------------------------------+-----+--------+----------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

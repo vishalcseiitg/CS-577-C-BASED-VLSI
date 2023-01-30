@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'diffeq/clock' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="diffeq_hls" solutionName="solution1" date="2023-01-23T16:09:21.040+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 27, distance = 1, offset = 1) between 'dsub' operation ('u1', diffeq.cpp:7) and 'dmul' operation ('mul1', diffeq.cpp:7).&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="diffeq_hls" solutionName="solution1" date="2023-01-23T16:09:20.763+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1) between 'dsub' operation ('u1', diffeq.cpp:7) and 'dmul' operation ('mul1', diffeq.cpp:7).&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="diffeq_hls" solutionName="solution1" date="2023-01-23T16:09:20.732+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'dadd' operation ('x1', diffeq.cpp:9) and 'icmp' operation ('icmp_ln6', diffeq.cpp:6).&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="diffeq_hls" solutionName="solution1" date="2023-01-23T16:09:20.730+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'dadd' operation ('x1', diffeq.cpp:9) and 'icmp' operation ('icmp_ln6', diffeq.cpp:6).&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="diffeq_hls" solutionName="solution1" date="2023-01-23T16:09:20.726+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'dadd' operation ('x1', diffeq.cpp:9) and 'icmp' operation ('icmp_ln6', diffeq.cpp:6).&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="diffeq_hls" solutionName="solution1" date="2023-01-23T16:09:20.724+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation ('and_ln6_1', diffeq.cpp:6)) in the first pipeline iteration (II = 1 cycles).&#xA;Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-878.html" projectName="diffeq_hls" solutionName="solution1" date="2023-01-23T16:09:20.722+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'clock' (diffeq.cpp:3:104)" projectName="diffeq_hls" solutionName="solution1" date="2023-01-23T16:09:18.175+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

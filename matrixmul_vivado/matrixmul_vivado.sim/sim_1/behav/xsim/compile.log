@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module matrixmul_mac_muladd_8s_8s_16ns_16_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrixmul_mac_muladd_8s_8s_16s_16_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mul_8s_8s_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_mul_8s_8s_16_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul

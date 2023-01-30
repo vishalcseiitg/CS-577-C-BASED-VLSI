@@ -1,0 +1,6 @@
+sv work "glbl.v"
+sv xil_defaultlib "funArr.autotb.v"
+sv xil_defaultlib "funArr_flow_control_loop_pipe.v"
+sv xil_defaultlib "funArr.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

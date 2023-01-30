@@ -1,0 +1,101 @@
+INFO: [HLS 200-10] Running '/home/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'vishal' on host 'vishal1005' (Linux_x86_64 version 5.15.0-57-generic) on Mon Jan 23 16:09:06 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/vishal/Desktop/HLS/second_order_diif_eq'
+Sourcing Tcl script '/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source /home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project diffeq_hls 
+INFO: [HLS 200-10] Opening project '/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls'.
+INFO: [HLS 200-1510] Running: set_top diffeq 
+INFO: [HLS 200-1510] Running: add_files diffeq.cpp 
+INFO: [HLS 200-10] Adding design file 'diffeq.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb diffeq.h -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'diffeq.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb diff_eq_tb_2.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'diff_eq_tb_2.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/vishal/Desktop/HLS/second_order_diif_eq/diffeq_hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -flow=syn
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -flow syn -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: source ./diffeq_hls/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name diffeq diffeq 
+INFO: [HLS 200-1510] Running: csynth_design 
+Running Dispatch Server on port: 45319
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.02 seconds; current allocated memory: 214.258 MB.
+INFO: [HLS 200-10] Analyzing design file 'diffeq.cpp' ... 
+WARNING: [HLS 207-5292] unused parameter 'clock' (diffeq.cpp:3:104)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.09 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.28 seconds; current allocated memory: 214.258 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.2 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.41 seconds; current allocated memory: 215.285 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 215.285 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 216.410 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 217.242 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_6_1' (diffeq.cpp:7) in function 'diffeq' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 239.078 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 239.078 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'diffeq' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'diffeq' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_6_1'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation ('and_ln6_1', diffeq.cpp:6)) in the first pipeline iteration (II = 1 cycles).
+Resolution: For help on HLS 200-878 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-878.html
+WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'dadd' operation ('x1', diffeq.cpp:9) and 'icmp' operation ('icmp_ln6', diffeq.cpp:6).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'dadd' operation ('x1', diffeq.cpp:9) and 'icmp' operation ('icmp_ln6', diffeq.cpp:6).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'dadd' operation ('x1', diffeq.cpp:9) and 'icmp' operation ('icmp_ln6', diffeq.cpp:6).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1) between 'dsub' operation ('u1', diffeq.cpp:7) and 'dmul' operation ('mul1', diffeq.cpp:7).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'diffeq' (loop 'VITIS_LOOP_6_1'): Unable to enforce a carried dependence constraint (II = 27, distance = 1, offset = 1) between 'dsub' operation ('u1', diffeq.cpp:7) and 'dmul' operation ('mul1', diffeq.cpp:7).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 28, Depth = 37, loop 'VITIS_LOOP_6_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 239.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 239.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'diffeq' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'diffeq/x' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'diffeq/dx' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'diffeq/u' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'diffeq/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'diffeq/clock' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'diffeq/y' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'diffeq' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'diffeq' pipeline 'VITIS_LOOP_6_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Port 'diffeq/clock' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'dadddsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'diffeq'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 239.078 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.32 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 239.078 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.16 seconds; current allocated memory: 243.559 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for diffeq.
+INFO: [VLOG 209-307] Generating Verilog RTL for diffeq.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 125.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4.22 seconds. CPU system time: 0.42 seconds. Elapsed time: 4.79 seconds; current allocated memory: 29.422 MB.
+INFO: [HLS 200-112] Total CPU user time: 5.18 seconds. Total CPU system time: 0.53 seconds. Total elapsed time: 15.8 seconds; peak allocated memory: 243.680 MB.

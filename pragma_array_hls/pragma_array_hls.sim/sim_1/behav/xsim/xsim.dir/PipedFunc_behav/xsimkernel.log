@@ -1,0 +1,4 @@
+Running: xsim.dir/PipedFunc_behav/xsimk -simmode gui -wdb PipedFunc_behav.wdb -simrunnum 0 -socket 58841
+Design successfully loaded
+Design Loading Memory Usage: 29148 KB (Peak: 29704 KB)
+Design Loading CPU Usage: 30 ms

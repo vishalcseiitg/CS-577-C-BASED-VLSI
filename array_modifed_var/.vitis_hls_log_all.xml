@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [HLS 200-1023] Part '-' is not installed.&#xA;command 'create_platform' returned error code&#xA;    while executing&#xA;&quot;source /home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$newargs&quot;&#xA;    (procedure &quot;hls_proc&quot; line 16)&#xA;    invoked from within&#xA;&quot;hls_proc [info nameofexecutable] $argv&quot;" projectName="array_modifed_var" solutionName="solution1" date="2023-01-29T10:54:29.070+0530"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

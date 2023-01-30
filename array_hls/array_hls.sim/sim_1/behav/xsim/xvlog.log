@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/array_hls_27_jan/solution1/syn/verilog/funArr_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module funArr_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/array_hls_27_jan/solution1/syn/verilog/funArr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module funArr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/vishal/Desktop/HLS/array_hls/array_hls.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/vishal/half_adder/solution1/./sim/autowrap/testbench/half_adder.c_pre.c.tb.c

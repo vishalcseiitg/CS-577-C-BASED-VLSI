@@ -1,0 +1,29 @@
+INFO: [HLS 200-10] Running '/home/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'vishal' on host 'vishal1005' (Linux_x86_64 version 5.15.0-58-generic) on Sun Jan 29 10:54:25 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/vishal/Desktop/HLS'
+Sourcing Tcl script '/home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project array_modifed_var 
+INFO: [HLS 200-10] Opening project '/home/vishal/Desktop/HLS/array_modifed_var'.
+INFO: [HLS 200-1510] Running: set_top funArr 
+INFO: [HLS 200-1510] Running: add_files ../../array_modifed.cpp 
+INFO: [HLS 200-10] Adding design file '../../array_modifed.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../../array_modified_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '../../array_modified_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/vishal/Desktop/HLS/array_modifed_var/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+ERROR: [HLS 200-1023] Part '-' is not installed.
+command 'create_platform' returned error code
+    while executing
+"source /home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl"
+    invoked from within
+"hls::main /home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 1.79 seconds. Total CPU system time: 0.33 seconds. Total elapsed time: 7.16 seconds; peak allocated memory: 180.094 MB.

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jan 24 16:00:58 2023
+# Process ID: 1145951
+# Current directory: /home/vishal/Desktop/HLS/matrixmul_vivado/matrixmul_vivado.runs/impl_1
+# Command line: vivado -log matrixmul.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source matrixmul.tcl -notrace
+# Log file: /home/vishal/Desktop/HLS/matrixmul_vivado/matrixmul_vivado.runs/impl_1/matrixmul.vdi
+# Journal file: /home/vishal/Desktop/HLS/matrixmul_vivado/matrixmul_vivado.runs/impl_1/vivado.jou
+# Running On: vishal1005, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 8, Host memory: 16543 MB
+#-----------------------------------------------------------
+source matrixmul.tcl -notrace

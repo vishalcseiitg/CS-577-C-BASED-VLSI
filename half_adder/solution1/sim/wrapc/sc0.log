@@ -1,0 +1,24 @@
+   Build using "/home/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_half_adder.cpp
+   Compiling (apcc) half_adder.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'vishal' on host 'vishal1005' (Linux_x86_64 version 5.15.0-57-generic) on Fri Jan 20 10:43:36 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/vishal/half_adder/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_vishal/1820881674191616938022
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.41 seconds. Total CPU system time: 0.07 seconds. Total elapsed time: 1.47 seconds; peak allocated memory: 98.957 MB.
+   Compiling (apcc) half_adder_tb.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/home/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'vishal' on host 'vishal1005' (Linux_x86_64 version 5.15.0-57-generic) on Fri Jan 20 10:43:39 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/vishal/half_adder/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_vishal/1821481674191619421112
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1.37 seconds. Total CPU system time: 0.09 seconds. Total elapsed time: 1.43 seconds; peak allocated memory: 98.957 MB.
+   Compiling apatb_half_adder_ir.ll
+   Generating cosim.tv.exe

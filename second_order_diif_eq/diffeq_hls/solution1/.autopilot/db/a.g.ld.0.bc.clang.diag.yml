@@ -1,0 +1,16 @@
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: diffeq.cpp, Line: 6, Column: 21 }
+Function:        _Z6diffeqdddddd
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_6_1
+  - String:          ' '
+  - LoopLoc:         'diffeq.cpp:6:21'
+  - String:          ' '
+  - Function:        'diffeq(double, double, double, double, double, double)'
+    DebugLoc:        { File: diffeq.cpp, Line: 3, Column: 0 }
+  - String:          ' '
+...

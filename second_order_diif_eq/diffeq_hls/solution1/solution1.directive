@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="diffeq" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="diffeq"/>
+            </pragma>
+        </directive>
+        <directive functionName="diffeq" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="diffeq"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

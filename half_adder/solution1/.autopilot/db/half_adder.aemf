@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1674129702576">
+  <ports id="1" name="a" type="PortType" originalName="a" coreId="1227506624" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="b" type="PortType" originalName="b" coreId="808529200" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="sum" type="PortType" originalName="sum" coreId="1718511904" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="carry" type="PortType" originalName="carry" coreId="1227570296" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="24" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="26" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="27" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="28" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="31" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="32" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="33" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="34" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="36" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@ports.3"/>
+  <edges id="37" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <blocks id="21" name="half_adder" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="b_read" lineNumber="1" originalName="b" fileName="half_adder.c" fileDirectory=".." coreId="1667592275" contextFuncName="half_adder" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="half_adder.c" linenumber="1" fileDirectory="/home/vishal" functionName="half_adder"/>
+      <dataInputObjs>b</dataInputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="a_read" lineNumber="1" originalName="a" fileName="half_adder.c" fileDirectory=".." coreId="1855079824" contextFuncName="half_adder" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="half_adder.c" linenumber="1" fileDirectory="/home/vishal" functionName="half_adder"/>
+      <dataInputObjs>a</dataInputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="xor_ln2" lineNumber="2" fileName="half_adder.c" fileDirectory=".." rtlName="sum" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="half_adder" bitwidth="32" opcode="xor" m_display="0" m_delay="0.31" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="half_adder.c" linenumber="2" fileDirectory="/home/vishal" functionName="half_adder"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sum_write_ln2" lineNumber="2" fileName="half_adder.c" fileDirectory=".." coreId="1747938401" contextFuncName="half_adder" opcode="write" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="half_adder.c" linenumber="2" fileDirectory="/home/vishal" functionName="half_adder"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>sum</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="and_ln3" lineNumber="3" fileName="half_adder.c" fileDirectory=".." rtlName="carry" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="half_adder" bitwidth="32" opcode="and" m_display="0" m_delay="0.31" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="half_adder.c" linenumber="3" fileDirectory="/home/vishal" functionName="half_adder"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="carry_write_ln3" lineNumber="3" fileName="half_adder.c" fileDirectory=".." coreId="0" contextFuncName="half_adder" opcode="write" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="half_adder.c" linenumber="3" fileDirectory="/home/vishal" functionName="half_adder"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>carry</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="_ln4" lineNumber="4" fileName="half_adder.c" fileDirectory=".." coreId="304" contextFuncName="half_adder" opcode="ret" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="half_adder.c" linenumber="4" fileDirectory="/home/vishal" functionName="half_adder"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="half_adder.c">
+      <validLinenumbers>1</validLinenumbers>
+      <validLinenumbers>2</validLinenumbers>
+      <validLinenumbers>3</validLinenumbers>
+      <validLinenumbers>4</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="and_ln3_fu_61">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln2_fu_54">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln3_write_fu_47">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="a_read_read_fu_34">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="b_read_read_fu_28">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln2_write_fu_40">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioPorts name="a">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="b">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="carry">
+    <contents name="write">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="sum">
+    <contents name="write">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="half_adder" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

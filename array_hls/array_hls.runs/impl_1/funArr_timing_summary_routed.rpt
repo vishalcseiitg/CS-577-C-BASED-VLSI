@@ -1,0 +1,711 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date              : Fri Jan 27 18:05:25 2023
+| Host              : vishal1005 running 64-bit Ubuntu 22.04.1 LTS
+| Command           : report_timing_summary -max_paths 10 -report_unconstrained -file funArr_timing_summary_routed.rpt -pb funArr_timing_summary_routed.pb -rpx funArr_timing_summary_routed.rpx -warn_on_violation
+| Design            : funArr
+| Device            : xczu7ev-ffvc1156
+| Speed File        : -2  PRODUCTION 1.30 05-15-2022
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  6           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (6)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (11)
+5. checking no_input_delay (2)
+6. checking no_output_delay (3)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (6)
+------------------------
+ There are 6 register/latch pins with no clock driven by root clock pin: ap_clk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (11)
+-------------------------------------------------
+ There are 11 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (3)
+-------------------------------
+ There are 3 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                   45          inf        0.000                      0                   45           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay            45 Endpoints
+Min Delay            45 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 ap_start
+                            (input port)
+  Destination:            ap_ready
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.207ns  (logic 3.528ns (67.763%)  route 1.679ns (32.237%))
+  Logic Levels:           4  (IBUFCTRL=1 INBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    E5                                                0.000     0.000 r  ap_start (IN)
+                         net (fo=0)                   0.000     0.000    ap_start_IBUF_inst/I
+    E5                   INBUF (Prop_INBUF_HDIOB_S_PAD_O)
+                                                      1.034     1.034 r  ap_start_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.034    ap_start_IBUF_inst/OUT
+    E5                   IBUFCTRL (Prop_IBUFCTRL_HDIOB_S_I_O)
+                                                      0.000     1.034 r  ap_start_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=6, routed)           0.902     1.935    flow_control_loop_pipe_U/ap_start_IBUF
+    SLICE_X100Y353       LUT2 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.150     2.085 r  flow_control_loop_pipe_U/ap_ready_OBUF_inst_i_1/O
+                         net (fo=1, routed)           0.777     2.862    ap_ready_OBUF
+    A5                   OBUF (Prop_OUTBUF_HDIOB_S_I_O)
+                                                      2.345     5.207 r  ap_ready_OBUF_inst/O
+                         net (fo=0)                   0.000     5.207    ap_ready
+    A5                                                                r  ap_ready (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ap_start
+                            (input port)
+  Destination:            S_ap_vld
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.165ns  (logic 3.468ns (67.137%)  route 1.698ns (32.863%))
+  Logic Levels:           4  (IBUFCTRL=1 INBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    E5                                                0.000     0.000 r  ap_start (IN)
+                         net (fo=0)                   0.000     0.000    ap_start_IBUF_inst/I
+    E5                   INBUF (Prop_INBUF_HDIOB_S_PAD_O)
+                                                      1.034     1.034 r  ap_start_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.034    ap_start_IBUF_inst/OUT
+    E5                   IBUFCTRL (Prop_IBUFCTRL_HDIOB_S_I_O)
+                                                      0.000     1.034 r  ap_start_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=6, routed)           0.886     1.919    flow_control_loop_pipe_U/ap_start_IBUF
+    SLICE_X100Y353       LUT2 (Prop_D5LUT_SLICEL_I0_O)
+                                                      0.110     2.029 r  flow_control_loop_pipe_U/S_ap_vld_OBUF_inst_i_1/O
+                         net (fo=1, routed)           0.812     2.841    S_ap_vld_OBUF
+    D6                   OBUF (Prop_OUTBUF_HDIOB_M_I_O)
+                                                      2.324     5.165 r  S_ap_vld_OBUF_inst/O
+                         net (fo=0)                   0.000     5.165    S_ap_vld
+    D6                                                                r  S_ap_vld (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ap_start
+                            (input port)
+  Destination:            ap_done
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.994ns  (logic 3.454ns (69.172%)  route 1.540ns (30.829%))
+  Logic Levels:           4  (IBUFCTRL=1 INBUF=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    E5                                                0.000     0.000 r  ap_start (IN)
+                         net (fo=0)                   0.000     0.000    ap_start_IBUF_inst/I
+    E5                   INBUF (Prop_INBUF_HDIOB_S_PAD_O)
+                                                      1.034     1.034 r  ap_start_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.034    ap_start_IBUF_inst/OUT
+    E5                   IBUFCTRL (Prop_IBUFCTRL_HDIOB_S_I_O)
+                                                      0.000     1.034 r  ap_start_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=6, routed)           0.886     1.919    flow_control_loop_pipe_U/ap_start_IBUF
+    SLICE_X100Y353       LUT2 (Prop_D6LUT_SLICEL_I1_O)
+                                                      0.099     2.018 r  flow_control_loop_pipe_U/ap_done_OBUF_inst_i_1/O
+                         net (fo=1, routed)           0.654     2.672    ap_done_OBUF
+    D5                   OBUF (Prop_OUTBUF_HDIOB_S_I_O)
+                                                      2.322     4.994 r  ap_done_OBUF_inst/O
+                         net (fo=0)                   0.000     4.994    ap_done
+    D5                                                                r  ap_done (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ap_start
+                            (input port)
+  Destination:            ap_idle
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.710ns  (logic 3.524ns (74.816%)  route 1.186ns (25.184%))
+  Logic Levels:           4  (IBUFCTRL=1 INBUF=1 LUT1=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    E5                                                0.000     0.000 f  ap_start (IN)
+                         net (fo=0)                   0.000     0.000    ap_start_IBUF_inst/I
+    E5                   INBUF (Prop_INBUF_HDIOB_S_PAD_O)
+                                                      1.034     1.034 f  ap_start_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.034    ap_start_IBUF_inst/OUT
+    E5                   IBUFCTRL (Prop_IBUFCTRL_HDIOB_S_I_O)
+                                                      0.000     1.034 f  ap_start_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=6, routed)           0.602     1.636    ap_start_IBUF
+    SLICE_X99Y353        LUT1 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.150     1.786 r  ap_idle_OBUF_inst_i_1/O
+                         net (fo=1, routed)           0.584     2.370    ap_idle_OBUF
+    B5                   OBUF (Prop_OUTBUF_HDIOB_M_I_O)
+                                                      2.340     4.710 r  ap_idle_OBUF_inst/O
+                         net (fo=0)                   0.000     4.710    ap_idle
+    B5                                                                r  ap_idle (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[1]
+                            (input port)
+  Destination:            S[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.707ns  (logic 1.455ns (39.246%)  route 2.252ns (60.754%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    L16                                               0.000     0.000 r  A[1] (IN)
+                         net (fo=0)                   0.000     0.000    A_IBUF[1]_inst/I
+    L16                  INBUF (Prop_INBUF_HPIOB_S_PAD_O)
+                                                      0.516     0.516 r  A_IBUF[1]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.516    A_IBUF[1]_inst/OUT
+    L16                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_S_I_O)
+                                                      0.000     0.516 r  A_IBUF[1]_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           2.252     2.768    S_OBUF[3]
+    A7                   OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.938     3.707 r  S_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     3.707    S[3]
+    A7                                                                r  S[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[27]
+                            (input port)
+  Destination:            S[29]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.701ns  (logic 1.489ns (40.231%)  route 2.212ns (59.769%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    D14                                               0.000     0.000 r  A[27] (IN)
+                         net (fo=0)                   0.000     0.000    A_IBUF[27]_inst/I
+    D14                  INBUF (Prop_INBUF_HPIOB_S_PAD_O)
+                                                      0.561     0.561 r  A_IBUF[27]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.561    A_IBUF[27]_inst/OUT
+    D14                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_S_I_O)
+                                                      0.000     0.561 r  A_IBUF[27]_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           2.212     2.773    S_OBUF[29]
+    D9                   OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.928     3.701 r  S_OBUF[29]_inst/O
+                         net (fo=0)                   0.000     3.701    S[29]
+    D9                                                                r  S[29] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[28]
+                            (input port)
+  Destination:            S[30]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.686ns  (logic 1.497ns (40.608%)  route 2.189ns (59.392%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    G14                                               0.000     0.000 r  A[28] (IN)
+                         net (fo=0)                   0.000     0.000    A_IBUF[28]_inst/I
+    G14                  INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.570     0.570 r  A_IBUF[28]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.570    A_IBUF[28]_inst/OUT
+    G14                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.570 r  A_IBUF[28]_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           2.189     2.759    S_OBUF[30]
+    F8                   OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.927     3.686 r  S_OBUF[30]_inst/O
+                         net (fo=0)                   0.000     3.686    S[30]
+    F8                                                                r  S[30] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[26]
+                            (input port)
+  Destination:            S[28]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.685ns  (logic 1.489ns (40.405%)  route 2.196ns (59.595%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    D15                                               0.000     0.000 r  A[26] (IN)
+                         net (fo=0)                   0.000     0.000    A_IBUF[26]_inst/I
+    D15                  INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.561     0.561 r  A_IBUF[26]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.561    A_IBUF[26]_inst/OUT
+    D15                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.561 r  A_IBUF[26]_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           2.196     2.757    S_OBUF[28]
+    E9                   OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.928     3.685 r  S_OBUF[28]_inst/O
+                         net (fo=0)                   0.000     3.685    S[28]
+    E9                                                                r  S[28] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[25]
+                            (input port)
+  Destination:            S[27]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.682ns  (logic 1.478ns (40.144%)  route 2.204ns (59.856%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    E14                                               0.000     0.000 r  A[25] (IN)
+                         net (fo=0)                   0.000     0.000    A_IBUF[25]_inst/I
+    E14                  INBUF (Prop_INBUF_HPIOB_S_PAD_O)
+                                                      0.554     0.554 r  A_IBUF[25]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.554    A_IBUF[25]_inst/OUT
+    E14                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_S_I_O)
+                                                      0.000     0.554 r  A_IBUF[25]_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           2.204     2.758    S_OBUF[27]
+    G9                   OBUF (Prop_OUTBUF_HPIOB_S_I_O)
+                                                      0.925     3.682 r  S_OBUF[27]_inst/O
+                         net (fo=0)                   0.000     3.682    S[27]
+    G9                                                                r  S[27] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A[24]
+                            (input port)
+  Destination:            S[26]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.669ns  (logic 1.479ns (40.304%)  route 2.190ns (59.696%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    E15                                               0.000     0.000 r  A[24] (IN)
+                         net (fo=0)                   0.000     0.000    A_IBUF[24]_inst/I
+    E15                  INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.554     0.554 r  A_IBUF[24]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.554    A_IBUF[24]_inst/OUT
+    E15                  IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.554 r  A_IBUF[24]_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           2.190     2.744    S_OBUF[26]
+    H9                   OBUF (Prop_OUTBUF_HPIOB_M_I_O)
+                                                      0.925     3.669 r  S_OBUF[26]_inst/O
+                         net (fo=0)                   0.000     3.669    S[26]
+    H9                                                                r  S[26] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 i_fu_46_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.096ns  (logic 0.054ns (56.285%)  route 0.042ns (43.715%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  i_fu_46_reg[4]/C
+    SLICE_X100Y354       FDRE (Prop_BFF_SLICEL_C_Q)
+                                                      0.039     0.039 r  i_fu_46_reg[4]/Q
+                         net (fo=4, routed)           0.027     0.066    flow_control_loop_pipe_U/Q[4]
+    SLICE_X100Y354       LUT6 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.015     0.081 r  flow_control_loop_pipe_U/i_fu_46[4]_i_2/O
+                         net (fo=1, routed)           0.015     0.096    flow_control_loop_pipe_U_n_4
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 i_fu_46_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.103ns  (logic 0.061ns (59.170%)  route 0.042ns (40.830%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  i_fu_46_reg[4]/C
+    SLICE_X100Y354       FDRE (Prop_BFF_SLICEL_C_Q)
+                                                      0.039     0.039 r  i_fu_46_reg[4]/Q
+                         net (fo=4, routed)           0.026     0.065    flow_control_loop_pipe_U/Q[4]
+    SLICE_X100Y354       LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.022     0.087 r  flow_control_loop_pipe_U/i_fu_46[1]_i_1/O
+                         net (fo=1, routed)           0.016     0.103    flow_control_loop_pipe_U_n_7
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 i_fu_46_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.103ns  (logic 0.053ns (51.222%)  route 0.050ns (48.778%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  i_fu_46_reg[2]/C
+    SLICE_X100Y354       FDRE (Prop_CFF_SLICEL_C_Q)
+                                                      0.039     0.039 r  i_fu_46_reg[2]/Q
+                         net (fo=5, routed)           0.033     0.072    flow_control_loop_pipe_U/Q[2]
+    SLICE_X100Y354       LUT6 (Prop_C6LUT_SLICEL_I1_O)
+                                                      0.014     0.086 r  flow_control_loop_pipe_U/i_fu_46[2]_i_1/O
+                         net (fo=1, routed)           0.017     0.103    flow_control_loop_pipe_U_n_6
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 i_fu_46_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.110ns  (logic 0.072ns (65.320%)  route 0.038ns (34.680%))
+  Logic Levels:           2  (FDRE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  i_fu_46_reg[0]/C
+    SLICE_X100Y354       FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.039     0.039 r  i_fu_46_reg[0]/Q
+                         net (fo=6, routed)           0.032     0.071    flow_control_loop_pipe_U/Q[0]
+    SLICE_X100Y354       LUT5 (Prop_D5LUT_SLICEL_I2_O)
+                                                      0.033     0.104 r  flow_control_loop_pipe_U/i_fu_46[3]_i_1/O
+                         net (fo=1, routed)           0.006     0.110    flow_control_loop_pipe_U_n_5
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 i_fu_46_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.122ns  (logic 0.074ns (60.543%)  route 0.048ns (39.457%))
+  Logic Levels:           2  (FDRE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  i_fu_46_reg[0]/C
+    SLICE_X100Y354       FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.039     0.039 f  i_fu_46_reg[0]/Q
+                         net (fo=6, routed)           0.032     0.071    flow_control_loop_pipe_U/Q[0]
+    SLICE_X100Y354       LUT2 (Prop_D6LUT_SLICEL_I1_O)
+                                                      0.035     0.106 r  flow_control_loop_pipe_U/i_fu_46[0]_i_1/O
+                         net (fo=1, routed)           0.016     0.122    flow_control_loop_pipe_U_n_8
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 flow_control_loop_pipe_U/ap_loop_init_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            flow_control_loop_pipe_U/ap_loop_init_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.175ns  (logic 0.074ns (42.264%)  route 0.101ns (57.736%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  flow_control_loop_pipe_U/ap_loop_init_reg/C
+    SLICE_X100Y354       FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.039     0.039 r  flow_control_loop_pipe_U/ap_loop_init_reg/Q
+                         net (fo=8, routed)           0.086     0.125    flow_control_loop_pipe_U/ap_loop_init
+    SLICE_X100Y354       LUT4 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.035     0.160 r  flow_control_loop_pipe_U/ap_loop_init_i_1/O
+                         net (fo=1, routed)           0.015     0.175    flow_control_loop_pipe_U/ap_loop_init_i_1_n_0
+    SLICE_X100Y354       FDRE                                         r  flow_control_loop_pipe_U/ap_loop_init_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 flow_control_loop_pipe_U/ap_loop_init_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[0]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.504ns  (logic 0.071ns (14.075%)  route 0.433ns (85.925%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  flow_control_loop_pipe_U/ap_loop_init_reg/C
+    SLICE_X100Y354       FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.039     0.039 r  flow_control_loop_pipe_U/ap_loop_init_reg/Q
+                         net (fo=8, routed)           0.086     0.125    flow_control_loop_pipe_U/ap_loop_init
+    SLICE_X100Y354       LUT3 (Prop_H5LUT_SLICEL_I2_O)
+                                                      0.032     0.157 r  flow_control_loop_pipe_U/i_fu_46[4]_i_1/O
+                         net (fo=5, routed)           0.347     0.504    i_fu_46
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 flow_control_loop_pipe_U/ap_loop_init_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[1]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.504ns  (logic 0.071ns (14.075%)  route 0.433ns (85.925%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  flow_control_loop_pipe_U/ap_loop_init_reg/C
+    SLICE_X100Y354       FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.039     0.039 r  flow_control_loop_pipe_U/ap_loop_init_reg/Q
+                         net (fo=8, routed)           0.086     0.125    flow_control_loop_pipe_U/ap_loop_init
+    SLICE_X100Y354       LUT3 (Prop_H5LUT_SLICEL_I2_O)
+                                                      0.032     0.157 r  flow_control_loop_pipe_U/i_fu_46[4]_i_1/O
+                         net (fo=5, routed)           0.347     0.504    i_fu_46
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 flow_control_loop_pipe_U/ap_loop_init_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[2]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.504ns  (logic 0.071ns (14.075%)  route 0.433ns (85.925%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  flow_control_loop_pipe_U/ap_loop_init_reg/C
+    SLICE_X100Y354       FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.039     0.039 r  flow_control_loop_pipe_U/ap_loop_init_reg/Q
+                         net (fo=8, routed)           0.086     0.125    flow_control_loop_pipe_U/ap_loop_init
+    SLICE_X100Y354       LUT3 (Prop_H5LUT_SLICEL_I2_O)
+                                                      0.032     0.157 r  flow_control_loop_pipe_U/i_fu_46[4]_i_1/O
+                         net (fo=5, routed)           0.347     0.504    i_fu_46
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 flow_control_loop_pipe_U/ap_loop_init_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            i_fu_46_reg[3]/CE
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.504ns  (logic 0.071ns (14.075%)  route 0.433ns (85.925%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y354       FDRE                         0.000     0.000 r  flow_control_loop_pipe_U/ap_loop_init_reg/C
+    SLICE_X100Y354       FDRE (Prop_HFF2_SLICEL_C_Q)
+                                                      0.039     0.039 r  flow_control_loop_pipe_U/ap_loop_init_reg/Q
+                         net (fo=8, routed)           0.086     0.125    flow_control_loop_pipe_U/ap_loop_init
+    SLICE_X100Y354       LUT3 (Prop_H5LUT_SLICEL_I2_O)
+                                                      0.032     0.157 r  flow_control_loop_pipe_U/i_fu_46[4]_i_1/O
+                         net (fo=5, routed)           0.347     0.504    i_fu_46
+    SLICE_X100Y354       FDRE                                         r  i_fu_46_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

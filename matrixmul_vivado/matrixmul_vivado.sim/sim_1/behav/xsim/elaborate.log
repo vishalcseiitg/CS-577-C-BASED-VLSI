@@ -1,0 +1,19 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot matrixmul_behav xil_defaultlib.matrixmul xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrixmul_mul_8s_8s_16_1_1(NUM_S...
+Compiling module xil_defaultlib.matrixmul_mac_muladd_8s_8s_16s_1...
+Compiling module xil_defaultlib.matrixmul_mac_muladd_8s_8s_16s_1...
+Compiling module xil_defaultlib.matrixmul_mac_muladd_8s_8s_16ns_...
+Compiling module xil_defaultlib.matrixmul_mac_muladd_8s_8s_16ns_...
+Compiling module xil_defaultlib.matrixmul_flow_control_loop_pipe
+Compiling module xil_defaultlib.matrixmul
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot matrixmul_behav

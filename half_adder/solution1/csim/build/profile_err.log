@@ -1,0 +1,13 @@
+warning: no profile data available for file "half_adder_tb.c" [-Wprofile-instr-unprofiled]
+1 warning generated.
+warning: no profile data available for file "half_adder.c" [-Wprofile-instr-unprofiled]
+1 warning generated.
+Function:half_adder ---> FID:1
+CFGHierUserfilelist:[/home/vishal/half_adder_tb.c /home/vishal/half_adder.c]
+TopFunctionName:half_adder
+Writing 'callgraphDemangle.dot'...Function:half_adder ---> FID:1
+
+Writing 'cfg_main_csim.dot'...Function:half_adder ---> FID:1
+
+Function:half_adder ---> FID:1
+Writing 'cfg_1_csim.dot'...

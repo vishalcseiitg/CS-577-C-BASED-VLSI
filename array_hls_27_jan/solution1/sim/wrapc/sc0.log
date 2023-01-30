@@ -1,0 +1,6 @@
+   Build using "/home/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_funArr.cpp
+   Compiling array_hls.cpp_pre.cpp.tb.cpp
+   Compiling hls_array_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_funArr_ir.ll
+   Generating cosim.tv.exe

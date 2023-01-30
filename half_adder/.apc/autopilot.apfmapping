@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="half_adder.c" path="/home/vishal/half_adder.c"/>
+  </source>
+  <testbench>
+    <originFiles name="half_adder_tb.c" path="/home/vishal/half_adder_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

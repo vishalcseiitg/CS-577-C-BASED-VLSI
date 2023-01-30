@@ -1,0 +1,28 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x3fa5740 [shape=record,filename="",linenumber="",label="{entry.predFake}"];
+	Node0x3fa5740 -> Node0x3fa5790[ callList="" memoryops="" filename="../../../../half_adder_tb.c" execusionnum="0"];
+	Node0x3f84a90 [shape=record,filename="../../../../half_adder_tb.c",linenumber="28",label="{for.end.succFake}"];
+subgraph cluster_0 {
+	label="entry";
+	tripcount="0";
+	invocationtime="-1";
+
+	Node0x3fa5790 [shape=record,filename="../../../../half_adder_tb.c",linenumber="16",label="{for.cond.predFake}"];
+	Node0x3fa5790 -> Node0x3f71b10[ callList="" memoryops="" filename="../../../../half_adder_tb.c" execusionnum="0"];
+	Node0x3fa58d0 [shape=record,filename="../../../../half_adder_tb.c",linenumber="24",label="{if.else.predFake}"];
+	Node0x3fa58d0 -> Node0x3fa5920[ callList="" memoryops="" filename="../../../../half_adder_tb.c" execusionnum="0"];
+	Node0x3fa5920 [shape=record,filename="../../../../half_adder_tb.c",linenumber="26",label="{if.end.predFake}"];
+	Node0x3fa5920 -> Node0x3fa5790[ callList="" memoryops="" filename="../../../../half_adder_tb.c" execusionnum="0"];
+	Node0x3f71b10 [shape=record,filename="../../../../half_adder_tb.c",linenumber="16",label="{for.cond.succFake|{<s0>T|<s1>F}}"];
+	Node0x3f71b10:s0 -> Node0x3f9c390[ callList="1:19" memoryops="test_cases_read:17; test_cases_read:18; test_cases_read:21" filename="../../../../half_adder_tb.c" execusionnum="0"];
+	Node0x3f71b10:s1 -> Node0x3f84a90[ callList="" memoryops="" filename="../../../../half_adder_tb.c" execusionnum="0"];
+	Node0x3f9c390 [shape=record,filename="../../../../half_adder_tb.c",linenumber="21",label="{for.body.succFake|{<s0>T|<s1>F}}"];
+	Node0x3f9c390:s0 -> Node0x3fa5a10[ callList="" memoryops="test_cases_read:21" filename="../../../../half_adder_tb.c" execusionnum="0"];
+	Node0x3f9c390:s1 -> Node0x3fa58d0;
+	Node0x3fa5a10 [shape=record,filename="../../../../half_adder_tb.c",linenumber="21",label="{land.lhs.true.succFake|{<s0>T|<s1>F}}"];
+	Node0x3fa5a10:s0 -> Node0x3fa5920[ callList="" memoryops="" filename="../../../../half_adder_tb.c" execusionnum="0"];
+	Node0x3fa5a10:s1 -> Node0x3fa58d0;
+}
+}

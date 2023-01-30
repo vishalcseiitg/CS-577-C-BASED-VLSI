@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul.v,1674450925,verilog,,,,matrixmul,,,,,,,,
+/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_flow_control_loop_pipe.v,1674473021,verilog,,/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v,,matrixmul_flow_control_loop_pipe,,,,,,,,
+/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mac_muladd_8s_8s_16ns_16_4_1.v,1674450926,verilog,,/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v,,matrixmul_mac_muladd_8s_8s_16ns_16_4_1;matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_1,,,,,,,,
+/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mac_muladd_8s_8s_16s_16_4_1.v,1674450926,verilog,,/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mul_8s_8s_16_1_1.v,,matrixmul_mac_muladd_8s_8s_16s_16_4_1;matrixmul_mac_muladd_8s_8s_16s_16_4_1_DSP48_0,,,,,,,,
+/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul_mul_8s_8s_16_1_1.v,1674450925,verilog,,/home/vishal/Desktop/HLS/lab_1/matrixmul/solution1/syn/verilog/matrixmul.v,,matrixmul_mul_8s_8s_16_1_1,,,,,,,,
+/home/vishal/Desktop/HLS/matrixmul_vivado/matrixmul_vivado.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,

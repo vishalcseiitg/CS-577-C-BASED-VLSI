@@ -1,0 +1,26 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: matrixmul.cpp, Line: 20, Column: 16 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Product
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrixmul.cpp, Line: 9, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         'matrixmul.cpp:20:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...

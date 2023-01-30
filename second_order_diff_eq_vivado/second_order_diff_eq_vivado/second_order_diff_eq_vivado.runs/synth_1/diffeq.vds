@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jan 20 16:07:04 2023
+# Process ID: 249993
+# Current directory: /home/vishal/HLS/second_order_diff_eq_vivado/second_order_diff_eq_vivado/second_order_diff_eq_vivado.runs/synth_1
+# Command line: vivado -log diffeq.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source diffeq.tcl
+# Log file: /home/vishal/HLS/second_order_diff_eq_vivado/second_order_diff_eq_vivado/second_order_diff_eq_vivado.runs/synth_1/diffeq.vds
+# Journal file: /home/vishal/HLS/second_order_diff_eq_vivado/second_order_diff_eq_vivado/second_order_diff_eq_vivado.runs/synth_1/vivado.jou
+# Running On: vishal1005, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 8, Host memory: 16543 MB
+#-----------------------------------------------------------
+source diffeq.tcl -notrace
+Command: synth_design -top diffeq -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 250022
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2561.902 ; gain = 240.801 ; free physical = 227 ; free virtual = 8062
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1946.139; parent = 1752.274; children = 193.864
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3564.980; parent = 2561.906; children = 1003.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'diffeq' [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq.v:10]
+INFO: [Synth 8-6157] synthesizing module 'diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1' [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1.v:9]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+ERROR: [Synth 8-439] module 'diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1_ip' not found [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1.v:43]
+ERROR: [Synth 8-6156] failed synthesizing module 'diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1' [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq_dadddsub_64ns_64ns_64_7_full_dsp_1.v:9]
+ERROR: [Synth 8-6156] failed synthesizing module 'diffeq' [/home/vishal/HLS/second_order_diif_eq/diffeq_hls/solution1/syn/verilog/diffeq.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2635.871 ; gain = 314.770 ; free physical = 174 ; free virtual = 7992
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2039.131; parent = 1845.301; children = 193.864
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3638.949; parent = 2635.875; children = 1003.074
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 20 16:07:19 2023...

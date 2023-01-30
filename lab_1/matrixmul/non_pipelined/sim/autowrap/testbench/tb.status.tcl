@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/vishal/Desktop/HLS/lab_1/matrixmul/non_pipelined/./sim/autowrap/testbench/matrixmul.cpp_pre.cpp.tb.cpp
