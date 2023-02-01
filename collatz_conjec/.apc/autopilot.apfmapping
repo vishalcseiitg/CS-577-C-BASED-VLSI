@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="collatz_conjecture.cpp" path="/home/vishal/Desktop/HLS/collatz_conjecture.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="collatz_conjecture_tb.cpp" path="/home/vishal/Desktop/HLS/collatz_conjecture_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

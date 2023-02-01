@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1675169207244">
+  <ports id="1" name="n" type="PortType" originalName="n" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="38" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="39" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="40" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="41" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="42" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="43" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="46" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="47" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="69" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="85" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="130" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="132" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="133" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="134" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <blocks id="9" name="entry" type="BlockType">
+    <controlOutputObjs>while.body</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="2" name="n_assign" originalName="n" coreId="1667592275" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="n_read" lineNumber="6" originalName="n" fileName="collatz_conjecture.cpp" fileDirectory=".." coreId="1667916399" contextFuncName="sequence" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="6" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+      <dataInputObjs>n</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="n_assign_write_ln8" lineNumber="8" fileName="collatz_conjecture.cpp" fileDirectory=".." coreId="48" contextFuncName="sequence" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="8" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="br_ln8" lineNumber="8" fileName="collatz_conjecture.cpp" fileDirectory=".." coreId="832320954" contextFuncName="sequence" opcode="br" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="8" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+      <controlInputObjs>while.body</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="collatz_conjecture.cpp">
+      <validLinenumbers>6</validLinenumbers>
+      <validLinenumbers>8</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="33" name="while.end" type="BlockType">
+    <controlInputObjs>while.body</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln24" lineNumber="24" fileName="collatz_conjecture.cpp" fileDirectory=".." coreId="1414419794" contextFuncName="sequence" opcode="ret" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="24" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="collatz_conjecture.cpp">
+      <validLinenumbers>24</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="116" pipe_depth="1" RegionName="VITIS_LOOP_8_1">
+    <basic_blocks id="14" name="while.body" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>if.end</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>while.end</controlOutputObjs>
+      <controlOutputObjs>if.end</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="n_assign_load" lineNumber="21" originalName="n" fileName="collatz_conjecture.cpp" fileDirectory=".." coreId="1818849391" contextFuncName="sequence" bitwidth="32" opcode="load" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="21" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>shl</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="icmp_ln13" lineNumber="13" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="icmp_ln13_fu_56_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="sequence" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.11" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="13" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln13" lineNumber="13" fileName="collatz_conjecture.cpp" fileDirectory=".." coreId="774844782" contextFuncName="sequence" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="13" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>if.end</controlInputObjs>
+        <controlInputObjs>while.end</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="collatz_conjecture.cpp">
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>13</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="31" name="if.end" type="BlockType">
+      <controlInputObjs>while.body</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>while.body</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="empty" lineNumber="21" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="empty_fu_62_p1" coreId="176" contextFuncName="sequence" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="8" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="21" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp" lineNumber="18" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="tmp_fu_66_p3" coreId="774905914" contextFuncName="sequence" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="9" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="18" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="sub_ln18" lineNumber="18" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="sub_ln18_fu_74_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="sequence" bitwidth="32" opcode="sub" m_display="0" m_delay="1.2" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="18" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="lshr_ln18_1" lineNumber="18" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="lshr_ln18_1_fu_80_p4" coreId="539915108" contextFuncName="sequence" bitwidth="31" opcode="partselect" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="18" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="zext_ln18" lineNumber="18" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="zext_ln18_fu_90_p1" coreId="758132786" contextFuncName="sequence" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="18" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="sub_ln18_1" lineNumber="18" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="sub_ln18_1_fu_94_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="sequence" bitwidth="32" opcode="sub" m_display="0" m_delay="1.19" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="18" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="lshr_ln18_2" lineNumber="18" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="lshr_ln18_2_fu_100_p4" coreId="2037542765" contextFuncName="sequence" bitwidth="31" opcode="partselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="18" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="zext_ln18_1" lineNumber="18" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="zext_ln18_1_fu_110_p1" coreId="1885415013" contextFuncName="sequence" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="15" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="18" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="select_ln18" lineNumber="18" originalName="n" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="select_ln18_fu_114_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="sequence" bitwidth="32" opcode="select" m_display="0" m_topoIndex="16" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="18" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="shl_ln21" lineNumber="21" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="shl_ln21_fu_122_p2" coreId="1414419794" contextFuncName="sequence" bitwidth="32" opcode="shl" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="21" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="sub_ln21" lineNumber="21" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="sub_ln21_fu_128_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="sequence" bitwidth="32" opcode="sub" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="21" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>shl</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="add_ln21" lineNumber="21" originalName="n" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="add_ln21_fu_134_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="sequence" bitwidth="32" opcode="add" m_display="0" m_delay="0.88" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="21" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="select_ln16" lineNumber="16" originalName="n" fileName="collatz_conjecture.cpp" fileDirectory=".." rtlName="select_ln16_fu_140_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="sequence" bitwidth="32" opcode="select" m_display="0" m_delay="0.52" m_topoIndex="20" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="16" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="n_assign_write_ln8" lineNumber="8" fileName="collatz_conjecture.cpp" fileDirectory=".." coreId="3256638112" contextFuncName="sequence" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="8" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="br_ln8" lineNumber="8" fileName="collatz_conjecture.cpp" fileDirectory=".." coreId="3256626824" contextFuncName="sequence" opcode="br" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="collatz_conjecture.cpp" linenumber="8" fileDirectory="/home/vishal/Desktop/HLS" functionName="sequence"/>
+        <controlInputObjs>while.body</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="collatz_conjecture.cpp">
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>18</validLinenumbers>
+        <validLinenumbers>16</validLinenumbers>
+        <validLinenumbers>8</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <regnodes realName="n_assign_reg_153">
+    <nodeIds>2</nodeIds>
+  </regnodes>
+  <expressionNodes realName="empty_fu_62">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_66">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln18_1_fu_94">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln16_fu_140">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="n_assign_fu_38">
+    <nodeIds>2</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln18_fu_90">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln21_fu_122">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln18_fu_114">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln13_fu_56">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln18_1_fu_80">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln21_fu_128">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln18_2_fu_100">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln18_fu_74">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln18_1_fu_110">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln21_fu_134">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln8_store_fu_148">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="n_assign_load_load_fu_53">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln8_store_fu_48">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="n_read_read_fu_42">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <ioPorts name="n">
+    <contents name="read">
+      <nodeIds>6</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="2" stage="1" latency="1"/>
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="sequence" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>9</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_8_1" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>31</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>33</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

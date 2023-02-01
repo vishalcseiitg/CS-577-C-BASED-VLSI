@@ -1,0 +1,5 @@
+/home/vishal/Desktop/HLS/collatz_conjec/solution1/.autopilot/db/collatz_conjecture.pp.0.cpp:28337:3: warning: Added loop label VITIS_LOOP_8_1:   [xilinx-label-all-loops]
+  while (true) {
+  ^~~~~
+  VITIS_LOOP_8_1: 
+/home/vishal/Desktop/HLS/collatz_conjec/solution1/.autopilot/db/collatz_conjecture.pp.0.cpp:28337:3: note: FIX-IT applied suggested code changes

@@ -1,29 +1,70 @@
 INFO: [HLS 200-10] Running '/home/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'vishal' on host 'vishal1005' (Linux_x86_64 version 5.15.0-58-generic) on Sun Jan 29 10:54:25 IST 2023
+INFO: [HLS 200-10] For user 'vishal' on host 'vishal1005' (Linux_x86_64 version 5.15.0-58-generic) on Tue Jan 31 20:18:18 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 22.04.1 LTS
 INFO: [HLS 200-10] In directory '/home/vishal/Desktop/HLS'
-Sourcing Tcl script '/home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl'
-INFO: [HLS 200-1510] Running: source /home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl
-INFO: [HLS 200-1510] Running: open_project array_modifed_var 
-INFO: [HLS 200-10] Opening project '/home/vishal/Desktop/HLS/array_modifed_var'.
-INFO: [HLS 200-1510] Running: set_top funArr 
-INFO: [HLS 200-1510] Running: add_files ../../array_modifed.cpp 
-INFO: [HLS 200-10] Adding design file '../../array_modifed.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb ../../array_modified_tb.cpp 
-INFO: [HLS 200-10] Adding test bench file '../../array_modified_tb.cpp' to the project
+Sourcing Tcl script '/home/vishal/Desktop/HLS/collatz_conjec/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: source /home/vishal/Desktop/HLS/collatz_conjec/solution1/cosim.tcl
+INFO: [HLS 200-1510] Running: open_project collatz_conjec 
+INFO: [HLS 200-10] Opening project '/home/vishal/Desktop/HLS/collatz_conjec'.
+INFO: [HLS 200-1510] Running: set_top sequence 
+INFO: [HLS 200-1510] Running: add_files collatz_conjecture.cpp 
+INFO: [HLS 200-10] Adding design file 'collatz_conjecture.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb collatz_conjecture_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'collatz_conjecture_tb.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/home/vishal/Desktop/HLS/array_modifed_var/solution1'.
+INFO: [HLS 200-10] Opening solution '/home/vishal/Desktop/HLS/collatz_conjec/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-ERROR: [HLS 200-1023] Part '-' is not installed.
-command 'create_platform' returned error code
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-1-i'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-1-i 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./collatz_conjec/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+Running Dispatch Server on port: 42117
+WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/home/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_sequence.cpp
+   Compiling collatz_conjecture.cpp_pre.cpp.tb.cpp
+   Compiling collatz_conjecture_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sequence_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Test case 1: 3 10 5 16 8 4 2 1 
+Test case 2: 4 2 1 
+Test case 3: 5 16 8 4 2 1 
+Test case 4: 6 3 10 5 16 8 4 2 1 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_sequence_top glbl -Oenable_linking_all_libraries -prj sequence.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s sequence -debug wave 
+Multi-threading is on. Using 14 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vishal/Desktop/HLS/collatz_conjec/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vishal/Desktop/HLS/collatz_conjec/solution1/sim/verilog/sequence.v" into library xil_defaultlib
+ERROR: [VRFC 10-4982] syntax error near 'sequence' [/home/vishal/Desktop/HLS/collatz_conjec/solution1/sim/verilog/sequence.v:12]
+ERROR: [VRFC 10-8549] SystemVerilog keyword 'sequence' used in incorrect context [/home/vishal/Desktop/HLS/collatz_conjec/solution1/sim/verilog/sequence.v:12]
+ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name "xsim.dir/sequence/xsimk" does not exist 
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 5.85 seconds. CPU system time: 0.74 seconds. Elapsed time: 17.62 seconds; current allocated memory: 3.914 MB.
+command 'ap_source' returned error code
     while executing
-"source /home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl"
+"source /home/vishal/Desktop/HLS/collatz_conjec/solution1/cosim.tcl"
     invoked from within
-"hls::main /home/vishal/Desktop/HLS/array_modifed_var/solution1/csim.tcl"
+"hls::main /home/vishal/Desktop/HLS/collatz_conjec/solution1/cosim.tcl"
     ("uplevel" body line 1)
     invoked from within
 "uplevel 1 hls::main {*}$newargs"
     (procedure "hls_proc" line 16)
     invoked from within
 "hls_proc [info nameofexecutable] $argv"
-INFO: [HLS 200-112] Total CPU user time: 1.79 seconds. Total CPU system time: 0.33 seconds. Total elapsed time: 7.16 seconds; peak allocated memory: 180.094 MB.
+INFO: [HLS 200-112] Total CPU user time: 8.17 seconds. Total CPU system time: 1.15 seconds. Total elapsed time: 40.46 seconds; peak allocated memory: 218.117 MB.

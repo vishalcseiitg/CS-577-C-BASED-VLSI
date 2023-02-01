@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln13_fu_56_p2" SOURCE="collatz_conjecture.cpp:13" VARIABLE="icmp_ln13" MODULE="sequence" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln18_fu_74_p2" SOURCE="collatz_conjecture.cpp:18" VARIABLE="sub_ln18" MODULE="sequence" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln18_1_fu_94_p2" SOURCE="collatz_conjecture.cpp:18" VARIABLE="sub_ln18_1" MODULE="sequence" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="select_ln18_fu_114_p3" SOURCE="collatz_conjecture.cpp:18" VARIABLE="select_ln18" MODULE="sequence" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op all" ID="" IMPL="tadder" LATENCY="0" OPTYPE="all" PRAGMA="" RTLNAME="sub_ln21_fu_128_p2" SOURCE="collatz_conjecture.cpp:21" VARIABLE="sub_ln21" MODULE="sequence" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op all" ID="" IMPL="tadder" LATENCY="0" OPTYPE="all" PRAGMA="" RTLNAME="add_ln21_fu_134_p2" SOURCE="collatz_conjecture.cpp:21" VARIABLE="add_ln21" MODULE="sequence" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="select_ln16_fu_140_p3" SOURCE="collatz_conjecture.cpp:16" VARIABLE="select_ln16" MODULE="sequence" LOOP="VITIS_LOOP_8_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

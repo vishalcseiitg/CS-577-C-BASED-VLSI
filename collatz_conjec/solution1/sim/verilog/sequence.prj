@@ -1,0 +1,6 @@
+sv work "glbl.v"
+sv xil_defaultlib "sequence.v"
+sv xil_defaultlib "sequence.autotb.v"
+sv xil_defaultlib "sequence_flow_control_loop_pipe.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

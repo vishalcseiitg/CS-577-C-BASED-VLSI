@@ -1,0 +1,16 @@
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: collatz_conjecture.cpp, Line: 8, Column: 19 }
+Function:        _Z8sequencei
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_8_1
+  - String:          ' '
+  - LoopLoc:         'collatz_conjecture.cpp:8:19'
+  - String:          ' '
+  - Function:        'sequence(int)'
+    DebugLoc:        { File: collatz_conjecture.cpp, Line: 6, Column: 0 }
+  - String:          ' '
+...

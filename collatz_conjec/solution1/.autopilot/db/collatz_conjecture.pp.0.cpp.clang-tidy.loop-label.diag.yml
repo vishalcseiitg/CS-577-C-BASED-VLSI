@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/vishal/Desktop/HLS/collatz_conjec/solution1/.autopilot/db/collatz_conjecture.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_8_1:  '
+    FileOffset:      8
+    FilePath:        collatz_conjecture.cpp
+    Replacements:    
+      - FilePath:        /home/vishal/Desktop/HLS/collatz_conjec/solution1/.autopilot/db/collatz_conjecture.pp.0.cpp
+        Offset:          763516
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_8_1: '
+...
