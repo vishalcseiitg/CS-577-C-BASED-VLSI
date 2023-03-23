@@ -14,6 +14,6 @@ The overall EDA tool flow.
 
 This course will help the students to take up research in the domain of HLS. Also, this course will help the students to become proficient for EDA industries.
 
-Pre-requisites: (1) Basic knowledge of digital circuits (2) Basic knowledge of Data structures and algorithms
+Pre-requisites: (1) Basic knowledge of digital circuits (2) Basic knowledge of Data structures and algorithms.
 
 
